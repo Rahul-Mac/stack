@@ -1,6 +1,5 @@
 #include "Stack.h"
-
-
+#include<stdio.h>
 int main()
 {
 	Stack *s = create_stack(3);
@@ -8,7 +7,7 @@ int main()
 	push(2, s);
 	push(3, s);
 	print(s);
-	printf("\nLength = %d", stack_length(s));
+	printf("Length = %d\n", stack_length(s));
 	pop(s);
 	print(s);
 	pop(s);
@@ -16,10 +15,10 @@ int main()
 	print(s);
 	pop(s);
 	print(s);
-	printf("\nPeek = %d", peek(s));
+	printf("Peek = %d\n", peek(s));
 	push(4, s);
 	push(5, s);
 	print(s);
-	printf("\nPeek = %d", peek(s));
+	printf("Peek = %d\n", peek(s));
 	return 0;
 }
